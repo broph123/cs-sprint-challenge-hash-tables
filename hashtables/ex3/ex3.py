@@ -4,7 +4,6 @@ def intersection(arrays):
     """
     # Your code here
     numbDict = {}
-    print(arrays)
 
 
 if __name__ == "__main__":

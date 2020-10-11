@@ -3,14 +3,15 @@ def has_negatives(a):
     YOUR CODE HERE
     """
     # Your code here
-    result = {}
+    # My Hashtable
+    posNeg = {}
     solution = []
-    for nums in a:
-        if abs(nums) in result:
-            result[nums] = True
-            solution.append(result[nums])
 
-    print(solution)
+    for num in a:
+        posNeg[num] = []
+
+        if num in posNeg:
+            solution.append(abs(num))
 
 
 if __name__ == "__main__":
