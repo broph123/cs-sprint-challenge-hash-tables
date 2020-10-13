@@ -8,10 +8,14 @@ def has_negatives(a):
     solution = []
 
     for num in a:
-        posNeg[num] = []
+        if num > 0:
+            posNeg[num] = True
 
-        if num in posNeg:
+    for num in a:
+        if num < 0 and abs(num) in posNeg:
             solution.append(abs(num))
+
+    return solution
 
 
 if __name__ == "__main__":

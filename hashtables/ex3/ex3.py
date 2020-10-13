@@ -4,6 +4,10 @@ def intersection(arrays):
     """
     # Your code here
     numbDict = {}
+    for array in arrays:
+        numbDict[array] = True
+
+    print(numbDict)
 
 
 if __name__ == "__main__":
